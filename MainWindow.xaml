@@ -20,7 +20,7 @@
                     <TextBlock Grid.Column="0" Text="Info :" FontSize="25" HorizontalAlignment="Left" Margin="0,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
 
-                    <TextBox Grid.Column="1" Name="Info" TextWrapping="Wrap"  Margin="0.4,101,29,190.4"/>
+                    <TextBox Grid.Column="1" Name="Info" TextWrapping="Wrap" AcceptsReturn="True"  Margin="0.4,101,29,190.4"/>
                     <Button Content="Enter" FontWeight="Bold" FontStyle="Italic"  RenderTransformOrigin="0.498,0.528" Grid.Column="1" Margin="85.4,371,117,138.4" Click="Button_Click_1" />
                     <TextBlock  Text="Welcome"   Foreground="DarkBlue"  FontSize="30" HorizontalAlignment="Left" Margin="49.4,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" FontStyle="Italic"/>
                     <TextBlock  Text="Write your appropriate information in each Line " FontSize="15" HorizontalAlignment="Left"  Margin="0.4,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Width="289" FontStyle="Italic" />

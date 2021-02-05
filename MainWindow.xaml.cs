@@ -13,7 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Excel= Microsoft.Office.Interop.Excel;
-//using Microsoft.Office.Interop.Excel;
 
 namespace WpfApp1
 {
@@ -47,9 +46,19 @@ namespace WpfApp1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             {
+                bool flag = true;
                 string information = Info.Text;
                 try
                 {
+                   
+                    if (Info.Text == "")
+                    {
+
+                        MessageBox.Show("please fill the blanks");
+                        flag = false;
+                    }
+   
+
                     string[] InfoArr = information.Split('\n');
                     Excel.Application xlApp = new Microsoft.Office.Interop.Excel.Application();
                     if (xlApp == null)
@@ -66,7 +75,7 @@ namespace WpfApp1
                     xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
 
 
-
+                    
                     string NameOfCar = InfoArr[0];
                     string[] InfoOfUser = InfoArr[1].Split(' ');
                     string NameOfUser = InfoOfUser[0];
@@ -74,6 +83,12 @@ namespace WpfApp1
                     string IdCode = InfoOfUser[2];
 
                     string CarCode = InfoArr[2];
+                    string ProdectDate = InfoOfUser[3];
+
+                    User user = new User(NameOfUser, LNameOfUser, IdCode);
+                    Car car = new Car(NameOfCar, CarCode, ProdectDate, user);
+                    if (car.IsValid())
+                        MessageBox.Show("invalid Carcode");
                     bool B1 = int.TryParse(CarCode.Substring(0, 2), out int n);
                     bool B2 = int.TryParse(CarCode.Substring(3), out int m);
                     bool B3 = char.IsUpper(CarCode[2]);
@@ -83,7 +98,7 @@ namespace WpfApp1
                         Console.WriteLine("the problem");
                         throw new Exception("Your PelakNumber is invalid");
                     }
-                    string ProdectDate = InfoOfUser[3];
+                    
                     string[] Passengers = InfoOfUser[4].Split(' ');
                     string SeatNumber = Passengers[0];
                     bool B4 = int.TryParse(SeatNumber, out int NP);
@@ -108,6 +123,7 @@ namespace WpfApp1
 
                 catch
                 {
+                    if(flag==true)
                     MessageBox.Show("Saved");
                 }
                 
