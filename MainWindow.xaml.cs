@@ -123,8 +123,10 @@ namespace WpfApp1
 
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
         {
-            ListBox1.Items.Add(TextBox1.Text);
-            MessageBox.Show("Added");
+            
+                ListBox1.Items.Add(TextBox1.Text);
+                MessageBox.Show("Added");
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

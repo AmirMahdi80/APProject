@@ -34,12 +34,12 @@
 
                     <TextBlock  Text="Query"   Foreground="DarkBlue"  FontSize="30" HorizontalAlignment="Left" Margin="142,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic"/>
                     <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="20,173,0,0" Grid.ColumnSpan="2">
-                        <ListBoxItem>ListBox Item #1</ListBoxItem>
-                        <ListBoxItem>ListBox Item #2</ListBoxItem>
-                        <ListBoxItem Selected="ListBoxItem_Selected">ListBox Item #3</ListBoxItem>
-                        <ListBoxItem>ListBox Item #4</ListBoxItem>
-                        <ListBoxItem>ListBox Item #5</ListBoxItem>
-                        <ListBoxItem>ListBox Item #5</ListBoxItem>
+                        <ListBoxItem>First Name</ListBoxItem>
+                        <ListBoxItem>Last Name</ListBoxItem>
+                        <ListBoxItem Selected="ListBoxItem_Selected">IdCode</ListBoxItem>
+                        <ListBoxItem>Birthday</ListBoxItem>
+                        <ListBoxItem>Others</ListBoxItem>
+                      
 
                     </ListBox>
                     <TextBox Grid.ColumnSpan="2" Name="TextBox1"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="0,71,0,0" TextChanged="TextBox_TextChanged"/>
