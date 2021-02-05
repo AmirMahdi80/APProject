@@ -8,53 +8,31 @@
         Title="MainWindow" Height="600" Width="400">
 
     <Border>
+        <TabControl Margin="0,0,-0.4,0.4">
+            <TabItem Header="Info">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
 
-        <StackPanel Margin="0,0,-0.4,0.4">
 
-            <TabControl Height="23" Margin="0,0,-0.4,0">
-                <TabItem Header="Info">
+                    <TextBlock Grid.Column="0" Text="Info" FontSize="25" HorizontalAlignment="Left" Margin="0,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
 
+                    <TextBox Grid.Column="1" Name="Info" TextWrapping="Wrap"  Margin="0.4,101,29,190.4"/>
+                    <Button Content="Enter" RenderTransformOrigin="0.498,0.528" Grid.Column="1" Margin="85.4,371,117,138.4" Click="Button_Click_1" />
+                    <TextBlock  Text="Welcome" FontSize="30" HorizontalAlignment="Left" Margin="49.4,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" FontStyle="Italic"/>
+                    <TextBlock  Text="Write your appropriate information in each Line " FontSize="15" HorizontalAlignment="Left" Margin="0.4,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Width="289" FontStyle="Italic" />
+                </Grid>
 
-
-
-                </TabItem>
-                
-                <TabItem Header="verification" HorizontalAlignment="Right" Margin="-2.8,-2,-1.6,0" Width="78"></TabItem>
-                
-                
-                <TabItem Header="Query">
-                
-
-                </TabItem>
-            </TabControl>
-
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="4*"/>
-                </Grid.ColumnDefinitions>
-                <TextBlock Text="Info"  FontSize="20" Grid.Column="0" Margin="15 25 -5 5" ></TextBlock>
-                <TextBox x:Name="Info" Grid.Column="1" Margin="9.6,25,9.6,-263.6"   >
-
-                </TextBox>
-                <TextBox x:Name="Info_Copy" Grid.Column="1" Margin="9.6,25,9.6,-263.6" TextWrapping="Wrap" AcceptsReturn="True" />
-            </Grid>
+            </TabItem>
+            <TabItem Header="Query"/>
+            <TabItem Header="Stats"/>
 
 
 
-
-
-            <Grid/>
-            <Grid>
-                <Button Content="Enter" Name="Submit" Margin="166,282,105.6,-281.8" Click="Button_Click"/>
-            </Grid>
-
-
-
-
-        </StackPanel>
-
+        </TabControl>
     </Border>
 
 
