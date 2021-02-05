@@ -25,9 +25,9 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-           
+            
         }
-
+       
         private void T1_TextChanged(object sender, TextChangedEventArgs e)
         {
 
@@ -110,6 +110,7 @@ namespace WpfApp1
                 {
                     MessageBox.Show("Saved");
                 }
+                
 
             }
 
@@ -118,6 +119,11 @@ namespace WpfApp1
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
  
+        }
+
+        private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+            ListBox1.Items.Add(TextBox1.Text);
         }
     }
 }
