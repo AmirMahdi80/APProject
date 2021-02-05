@@ -8,7 +8,7 @@
         Title="MainWindow" Height="600" Width="400">
 
     <Border>
-        <TabControl Margin="0,0,-0.4,0.4" Background="Azure">
+        <TabControl Margin="0,0,-0.4,0.4" Background="Azure" SelectionChanged="TabControl_SelectionChanged">
             <TabItem Header="Info" Background="Azure">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -27,8 +27,25 @@
                 </Grid>
 
             </TabItem>
-            <TabItem Header="Query" Background="Azure"/>
+            <TabItem Header="Query" Background="Azure">
+                <Grid>
+                    <TextBlock  Text="Query"   Foreground="DarkBlue"  FontSize="30" HorizontalAlignment="Left" Margin="143,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic"/>
+
+                    <ListBox HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="111,165,0,0">
+                        <ListBoxItem>ListBox Item #1</ListBoxItem>
+                        <ListBoxItem>ListBox Item #2</ListBoxItem>
+                        <ListBoxItem>ListBox Item #3</ListBoxItem>
+                        <ListBoxItem>ListBox Item #4</ListBoxItem>
+                        <ListBoxItem>ListBox Item #5</ListBoxItem>
+                        <ListBoxItem>ListBox Item #5</ListBoxItem>
+                        <Image Source="C:\Users\Amir Mahdi\Desktop\ap3\project\WpfApp1\WpfApp1\WpfApp1\CAR.jpg"></Image>
+                    </ListBox>
+                </Grid>
+
+            </TabItem>
             <TabItem Header="Stats" Background="Azure"/>
+
+
 
 
 
