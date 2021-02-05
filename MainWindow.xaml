@@ -29,14 +29,10 @@
             </TabItem>
             <TabItem Header="Query" Background="Azure">
                 <Grid>
-                    <Button Content="Add Item" Name="AddItem" FontWeight="Bold" FontStyle="Italic"  RenderTransformOrigin="0.498,0.528" Margin="54.2,72,167,448.4" Click="Button_Click_1" Grid.Column="1" />
+                    <Button Content="Add Item" Name="AddItem" FontWeight="Bold" FontStyle="Italic"  RenderTransformOrigin="0.5,0.5" Margin="142,72,163,440.4" Click="Button_Click_1" />
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="89*"/>
-                        <ColumnDefinition Width="299*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock  Text="Query"   Foreground="DarkBlue"  FontSize="30" HorizontalAlignment="Left" Margin="54.386,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic" Grid.Column="1"/>
 
+                    <TextBlock  Text="Query"   Foreground="DarkBlue"  FontSize="30" HorizontalAlignment="Left" Margin="142,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontStyle="Italic"/>
                     <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="20,173,0,0" Grid.ColumnSpan="2">
                         <ListBoxItem>ListBox Item #1</ListBoxItem>
                         <ListBoxItem>ListBox Item #2</ListBoxItem>
@@ -46,7 +42,7 @@
                         <ListBoxItem>ListBox Item #5</ListBoxItem>
 
                     </ListBox>
-                    <TextBox Grid.ColumnSpan="2" Name="TextBox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="0,71,0,0"/>
+                    <TextBox Grid.ColumnSpan="2" Name="TextBox1"  HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="0,71,0,0" TextChanged="TextBox_TextChanged"/>
                     <TextBlock HorizontalAlignment="Left" FontWeight="Bold" TextWrapping="Wrap" Text="Write your information here"  VerticalAlignment="Top" Margin="0,55,0,0" Grid.ColumnSpan="2" Width="163"/>
                 </Grid>
 
@@ -67,3 +63,4 @@
 
 
 </Window>
+
