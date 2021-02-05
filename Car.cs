@@ -8,11 +8,11 @@ namespace WpfApp1
 {
     public class Car
     {
-        string Name { get; set; }
-        string CarCode { get; set; }
-        string ProductDate { get; set; }
-        User Owner { get; set; }
-        int PathNumber = 0;
+         public string Name { get; set; }
+        public string CarCode { get; set; }
+        public string ProductDate { get; set; }
+        public User Owner { get; set; }
+        public int PathNumber = 0;
 
         public Car(string Name, string CarCode, string ProductDate, User Owner)
         {

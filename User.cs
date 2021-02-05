@@ -9,9 +9,9 @@ namespace WpfApp1
     
     public class User
     {
-        string FirstName { get; set; }
-        string LastName { get; set; }
-        string IdCode { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string IdCode { get; set; }
 
         public User(string FirstName, string LastName, string IdCode)
         {
